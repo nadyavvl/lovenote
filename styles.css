@@ -1,6 +1,5 @@
 /*variables*/
 :root{
- --whitish: #ECEBE4;
  --blue: #508AA8;
  --dark: #031927;
  --wheat: #AE9F84}
@@ -16,30 +15,39 @@ li
 
 /*base styles*/
 body
-      {background: var(--whitish);
-      overflow-x: hidden;
-      font-family: montserrat;
-      font-size: 20px}
+      {overflow-x: hidden;
+      }
 
 /*fonts*/
-       @font-face{font-family: 'montserrat'
+       @font-face{font-family: 'montserrat bold'
        src: url('assets/fonts/montserrat-bold.ttf')
+       font-family:  'montserrat light'
+       src: url('assets/fonts/montserrat-light.ttf');
        font-family: 'kanit'
-       src: url('assets/fonts/kanit-blackitalic.ttf')}
+       src: url('assets/fonts/kanit-blackitalic.ttf')
+       font-family: 'roboto'
+       src: url('assets/fonts/roboto-light.ttf')}
 h1,h2,h3,h4,h5
       {color: #031927}
  
 h1
       {font-family: kanit;
-      font-weight: black;
+      font-weight: 900;
       font-style: italic;	
       overflow: auto;
-      line-height: 105px;
       margin-bottom: 0;
-      background-image: url('assets/blue')}
+      line-height:110%;
+      }
 h2
-	{font-size: 24px;}
+	{font-family: montserrat-bold;
+      font-weight: bold;
+      font-size: 18px}
+h3{
+      font-family: montserrat-light;
+      font-weight: light;
+      font-size: 10px;
 
+}
 
 /*mobile styles*/
  @media screen and (min-width: 310px){
@@ -65,7 +73,7 @@ h2
 	{font-size: 125px;}
  }
  
-/*desctop styles*/
+/*desktop styles*/
  @media screen and (min-width: 1200px){
  h1
 	{font-size: 125px;}
