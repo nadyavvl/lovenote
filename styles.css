@@ -64,16 +64,16 @@ p
  
  }
  .artwork img{
-      width: 450px;
-      heiht: 425px;
-      y: -50px;
+      width: 50%;
+      heiht: auto;
+      y: 12%;
       object-position: 10px -40px;
       margin-top: -50px;
 
  }
  .me img{
-      width: 180px;
-      height: 545px;
+      width: 40%;
+      height: auto;
       float: right;
       margin-right: 20px;
 
@@ -84,11 +84,39 @@ p
  h1
 	{font-size: 125px;}
  }
+ .artwork img{
+      width: 50%;
+      heiht: auto;
+      y: -17%;
+      object-position: 10px -40px;
+      margin-top: -50px;
+
+ }
+ .me img{
+      width: 20%;
+      height: auto;
+      float: right;
+      margin-right: 20px;
+
+ }
  
 /*laptops*/
  @media screen and (min-width: 960px){
  h1
 	{font-size: 125px;}
+      .artwork img{
+      width: 30%;
+      heiht: auto;
+      y: -17%;
+      object-position: 10px -40px;
+      margin-top: -50px;
+
+ }
+ .me img{
+      width: 20%;
+      height: auto;
+      float: right;
+      margin-right: 20px;
  }
  
 /*desctop styles*/
