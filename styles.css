@@ -6,13 +6,11 @@
 
 /*reset*/
 body,p,a,ul,li
-      {margin-left: 5%;
-	      margin-right: 5%;
-	      margin-top:0;
-	      margin-bottom:0;
-		     
+      {margin: 5%;
       padding: 0;
       text-decoration: none;}
+      a {color: #508AA8;
+            margin-left: 0}
 
 li
       {list-style-type: none;}
@@ -26,10 +24,16 @@ background-color: white;
       }
 
 /*fonts*/
-       @font-face{font-family: 'montserrat', sans-serif;
+       @font-face{font-family: 'montserrat bold'
        src: url('assets/fonts/montserrat-bold.ttf');
+       font-weight: bold;
+       font-family:  'montserrat light'
+       src: url('assets/fonts/montserrat-light.ttf');
+       font-weight: lighter;
        font-family: 'kanit'
        src: url('assets/fonts/kanit-blackitalic.ttf')
+       font-family: 'roboto'
+       src: url('assets/fonts/roboto-light.ttf')}
 
 h1
       {font-family: kanit;
@@ -55,9 +59,10 @@ h4
 h5
       {color: #000033;
       font-family: montserrat-bold;}
-h6
+footer
       {color: #000033;
-      font-family: montserrat-bold;}
+      font-family: montserrat-bold;
+margin-bottom: 0}
 p
       {font-family: montserrat-light;
             font-size: x-small;}
@@ -68,13 +73,15 @@ p
  {
  h1
 	{
-            font-size: 11vw;
+      margin-right: 3,2%;
+            font-size: 12vw;
             font-weight: extra-bold;
             font-style: italic;
             z-index: 1;
         }
   h2
       {
+      margin-right: 3,2%;
             font-size: 6vw;
             font-weight: bold;
         }
@@ -85,7 +92,7 @@ h3 { font-size: 6vw;
 h4 {
             font-size: 6vw;
             line-height: auto;
-           margin-bottom: 0;
+           margin-bottom: -15px;
         }
  h5{
 
@@ -101,6 +108,10 @@ h4 {
       line-height: auto;
       margin-bottom: 10px;
  }
+ h6 {font-size: 5vw;
+            margin-left: 0;
+            line-height: auto;
+            display: inline-block;}
 
 
  
