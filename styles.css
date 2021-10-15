@@ -24,12 +24,8 @@ background-color: white;
 /*fonts*/
        @font-face{font-family: 'montserrat', sans-serif;
        src: url('assets/fonts/montserrat-bold.ttf');
-       font-family:  'montserrat', sans-serif;
-       src: url('assets/fonts/montserrat-light.ttf');
        font-family: 'kanit'
        src: url('assets/fonts/kanit-blackitalic.ttf')
-       font-family: 'roboto'
-       src: url('assets/fonts/roboto-light.ttf')}
 
 h1
       {font-family: kanit;
