@@ -6,7 +6,7 @@
 
 /*reset*/
 body,p,a,ul,li
-      {margin: 10;
+      {margin: 10px;
       padding: 0;
       text-decoration: none;}
 
@@ -36,14 +36,18 @@ h1
       overflow: auto;
       margin-bottom: 0;
       line-height:110%;
+      font-size:xx-large;
       }
 h2
 	{color: #000033;
-      font-family: montserrat-bold;
-      font-weight: bold}
+      font-family: montserrat-light;
+      font-weight: light;
+      font-size: small;}
 h3
       {color: #000033;
-      font-family: montserrat-light}
+      font-family: montserrat-light;
+      font-weight:  light;
+      font-size: large;}
 h4    
       {color: #000033;
       font-family: montserrat-bold;}
@@ -54,46 +58,71 @@ h6
       {color: #000033;
       font-family: montserrat-bold;}
 p
-      {font-family: montserrat-light;}
+      {font-family: montserrat-light;
+            font-size: x-small;}
+      .textik{margin-right: 0;n}
 
 /*mobile styles*/
- @media screen and (min-width: 310px)
+ @media screen and (min-width: 0px)
  {
  h1
-	{font-size: 100px;}
- 
+	{
+      margin-right: 3,2%;
+            font-size: 12vw;
+            font-weight: extra-bold;
+        }
+  h2
+      {
+      margin-right: 3,2%;
+            font-size: 6vw;
+            font-weight: bold;
+        }
+ p {
+      margin-left: 0;
+      font-size: 3vw;
  }
+ h5{
+
+      font-size: 4vw;}}
+
+
+ 
+ 
  .artwork img{
       width: 50%;
       heiht: auto;
-      y: 12%;
+      y: -30;
       object-position: 10px -40px;
-      margin-top: -50px;
-
- }
+      margin-top: -20px;}
  .me img{
       width: 40%;
       height: auto;
       float: right;
       margin-right: 20px;
+      top: 0px;
 
- }
+ }}
 
 /*small tablet styles*/
  @media screen and (min-width: 620px){
  h1
-	{font-size: 125px;}
+	{width: 50%;
+            margin-right: 4%;
+            font-size: xx-large;}
+
+
  }
  .artwork img{
       width: 50%;
       heiht: auto;
       y: -17%;
-      object-position: 10px -40px;
+      margin-right: 0,4%;
       margin-top: -50px;
+       y: -100px;
 
  }
  .me img{
-      width: 20%;
+      width: 35%;
       height: auto;
       float: right;
       margin-right: 20px;
@@ -105,10 +134,10 @@ p
  h1
 	{font-size: 125px;}
       .artwork img{
-      width: 30%;
+      width: 40%;
       heiht: auto;
       y: -17%;
-      object-position: 10px -40px;
+      margin-right: 0,5%;
       margin-top: -50px;
 
  }
@@ -124,3 +153,16 @@ p
  h1
 	{font-size: 125px;}
  }
+ .artwork img{
+      width: 40%;
+      heiht: auto;
+      y: -17%;
+      margin-right: 0,5%;
+      margin-top: -50px;
+
+ }
+ .me img{
+      width: 30%;
+      height: auto;
+      float: right;
+      margin-right: 20px;
