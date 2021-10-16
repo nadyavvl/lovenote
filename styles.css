@@ -1,20 +1,18 @@
-/*variables*/
 :root{
  --blue: #508AA8;
- --dark: #031927;
- }
+ --dark: #031927}
 
-/*reset*/
 body,p,a,ul,li
-      {margin: 5%;
+      {margin-left: 5%;
+      margin-right:5%;
+      margin-top:0
       padding: 0;
       text-decoration: none;}
-      a {color: #508AA8;
-            margin-left: 0}
-
+a 
+      {color: #508AA8;
+      margin-left: 0}
 li
       {list-style-type: none;}
-
 /*base styles*/
 body
       {overflow-x: hidden;
