@@ -22,11 +22,8 @@ background-color: white;
       }
 
 /*fonts*/
-       @font-face{font-family: 'montserrat-bold'
+       @font-face{font-family: 'montserrat'
        src: url('assets/fonts/montserrat-bold.ttf');
-       font-weight: bold;
-       font-family:  'montserrat-light'
-       src: url('assets/fonts/montserrat-light.ttf');
        font-weight: lighter;
        font-family: 'kanit'
        src: url('assets/fonts/kanit-blackitalic.ttf')
@@ -43,30 +40,30 @@ h1{
       }
 h2{
       color: #000033;
-      font-family: montserrat-light;
+      font-family: montserrat;
       font-weight: light;
       font-size: small;
       }
 h3{
       color: #000033;
-      font-family: montserrat-light;
+      font-family: montserrat;
       font-weight:  light;
       font-size: large;
       }
 h4{    
       color: #000033;
-      font-family: montserrat-bold;
+      font-family: montserrat;
       }
 h5{
       color: #000033;
-      font-family: montserrat-bold;
+      font-family: montserrat;
       }
 footer{
       color: #000033;
-      font-family: montserrat-bold;
+      font-family: montserrat;
       margin-bottom: 0}
 p{
-      font-family: montserrat-light;
+      font-family: montserrat;
       font-size: x-small;}
 .textik{margin-right: 0;n}
 
