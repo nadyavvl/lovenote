@@ -35,14 +35,14 @@ background-color: white;
 
 h1
       {font-family: kanit;
-            color: #000033;	
+      color: #000033;	
       overflow: auto;
       margin-bottom: 0;
-      line-height:110%;
+      line-height:100%;
       font-size:xx-large;
       }
 h2
-	{color: #000033;
+      {color: #000033;
       font-family: montserrat-light;
       font-weight: light;
       font-size: small;}
@@ -69,51 +69,45 @@ p
 /*mobile styles*/
  @media screen and (min-width: 0px)
  {
- h1
-	{
-      margin-right: 3,2%;
+ h1{
+            margin-right: 3,2%;
             font-size: 12vw;
             font-weight: extra-bold;
             font-style: italic;
-            z-index: 1;
         }
-  h2
-      {
-      margin-right: 3,2%;
+ h2{
+            margin-right: 3,2%;
             font-size: 6vw;
             font-weight: bold;
         }
-h3 { font-size: 6vw;
+ h3{ 
+	    font-size: 6vw;
             font-weight: bold;
             margin-bottom: -30px; }
 
-h4 {
+ h4{
             font-size: 6vw;
             line-height: auto;
-           margin-bottom: -15px;
+            margin-bottom: -15px;
         }
  h5{
-
-      font-size: 5vw;
+	    font-size: 5vw;
             margin-left: 0;
             line-height: auto;
             margin-bottom: 10px;
-
  }
- p {
-      margin-left: 0;
-      font-size: 5vw;
-      line-height: auto;
-      margin-bottom: 10px;
- }
- h6 {font-size: 5vw;
+ h6{
+	    font-size: 5vw;
             margin-left: 0;
             line-height: auto;
-            display: inline-block;}
-
-
- 
- 
+            display: inline-block;
+	}
+ p{
+            margin-left: 0;
+            font-size: 5vw;
+            line-height: auto;
+            margin-bottom: 10px;
+ }
  .artwork img{
       width: 55%;
       heiht: auto;
@@ -126,6 +120,5 @@ h4 {
       float: right;
       margin-right: 20px;
       margin-top: -180px;
-      z-index: -10;
-
- }}
+      z-index: -1;}
+}
