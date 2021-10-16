@@ -24,11 +24,8 @@ background-color: white;
 /*fonts*/
        @font-face{font-family: 'montserrat'
        src: url('assets/fonts/montserrat-bold.ttf');
-       font-weight: lighter;
        font-family: 'kanit'
-       src: url('assets/fonts/kanit-blackitalic.ttf')
-       font-family: 'roboto'
-       src: url('assets/fonts/roboto-light.ttf')}
+	       src: url('assets/fonts/kanit-blackitalic.ttf')}
 
 h1{
       font-family: kanit;
@@ -41,18 +38,19 @@ h1{
 h2{
       color: #000033;
       font-family: montserrat;
-      font-weight: light;
+      font-weight: 700;
       font-size: small;
       }
 h3{
       color: #000033;
       font-family: montserrat;
-      font-weight:  light;
+      font-weight:  700;
       font-size: large;
       }
 h4{    
       color: #000033;
       font-family: montserrat;
+	font-weight:700
       }
 h5{
       color: #000033;
