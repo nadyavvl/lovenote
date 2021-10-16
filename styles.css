@@ -33,40 +33,44 @@ background-color: white;
        font-family: 'roboto'
        src: url('assets/fonts/roboto-light.ttf')}
 
-h1
-      {font-family: kanit;
+h1{
+      font-family: kanit;
       color: #000033;	
       overflow: auto;
       margin-bottom: 0;
-      line-height:100%;
+      line-height:normal;
       font-size:xx-large;
       }
-h2
-      {color: #000033;
+h2{
+      color: #000033;
       font-family: montserrat-light;
       font-weight: light;
-      font-size: small;}
-h3
-      {color: #000033;
+      font-size: small;
+      }
+h3{
+      color: #000033;
       font-family: montserrat-light;
       font-weight:  light;
-      font-size: large;}
-h4    
-      {color: #000033;
-      font-family: montserrat-bold;}
-h5
-      {color: #000033;
-      font-family: montserrat-bold;}
-footer
-      {color: #000033;
+      font-size: large;
+      }
+h4{    
+      color: #000033;
       font-family: montserrat-bold;
-margin-bottom: 0}
-p
-      {font-family: montserrat-light;
-            font-size: x-small;}
-      .textik{margin-right: 0;n}
+      }
+h5{
+      color: #000033;
+      font-family: montserrat-bold;
+      }
+footer{
+      color: #000033;
+      font-family: montserrat-bold;
+      margin-bottom: 0}
+p{
+      font-family: montserrat-light;
+      font-size: x-small;}
+.textik{margin-right: 0;n}
 
-/*mobile styles*/
+/*playing with media tag with an ambition to do a desktop version*/
  @media screen and (min-width: 0px)
  {
  h1{
@@ -111,7 +115,7 @@ p
  .artwork img{
       width: 55%;
       heiht: auto;
-      y: -30;
+      y: -30%;
       object-position: 10px -40px;
       margin-top: -20px;}
  .me img{
