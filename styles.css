@@ -22,10 +22,10 @@ background-color: white;
       }
 
 /*fonts*/
-       @font-face{font-family: 'montserrat'
+       @font-face{font-family: 'montserrat-bold'
        src: url('assets/fonts/montserrat-bold.ttf');
        font-weight: bold;
-       font-family:  'montserrat'
+       font-family:  'montserrat-light'
        src: url('assets/fonts/montserrat-light.ttf');
        font-weight: lighter;
        font-family: 'kanit'
