@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 40px;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+:root{
+ --blue: #508AA8;
+ --dark: #031927}
+
+body,p,a,ul,li
+      {
+      margin-top:0
+      padding: 0;
+      text-decoration: none;}
+a 
+      {color: #508AA8;
+      margin-left: 0}
+li
+      {list-style-type: none;}
+/*base styles*/
+body
+      {overflow-x: hidden;
+overflow-y: auto;
+background-color: white;
+}
+
+img {
+  position: relative;
+  width: 30%;
+}
+/*fonts*/
+       @font-face{font-family: 'montserrat'
+       src: url('assets/fonts/montserrat-black.ttf');
+       font-family: 'kanit'
+         src: url('assets/fonts/kanit-blackitalic.ttf')}
+.intro{
+  width: 100%;
+}
+.group{
+  margin-left: 50px;
+}
+.text{
+  margin-left: 50px;
+  margin-right: 35%;
+}
+.ach{
+  margin-bottom: 50px;
+}
+.edu{
+  margin-top: 50px;
+}
+.topic{
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: bold;
+}
+h1{
+      color: black;
+      font-family: montserrat;
+      width: 100%;
+      font-size: auto;
+      line-height: 80px;
+      margin-top: -10px;
+      margin-bottom: 25px;
+      overflow: visible;
+      font-weight: black;
+}
+h2{
+      color: black;
+      font-family: montserrat;
+      font-weight: bold;
+      font-size: 23px;
+      }
+h3{
+      color: black;
+      font-family: montserrat;
+      font-weight:  bold;
+      font-size: 20px;
+      }
+h4{    
+      color: #000033;
+      font-family: montserrat;
+      font-weight:bold;
+      font-size: 15px;
+      }
+h5{
+      color: #000033;
+      font-family: montserrat;
+      font-size: 14px;
+      }
+
+p{
+      font-family: montserrat;
+      font-size: 14px;
+      }
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 25% 65%;
+  grid-template-rows: auto;
+  gap: 10px;
+  margin-left: ;
+}
+.edu {
+  display: grid;
+  grid-template-columns:5% 70%;
+  grid-template-areas: 
+  "group text"
+  "group text"
+  "group text"
+}
+.ach {
+  display: grid;
+  grid-template-areas: 
+  "group text"
+  "group text"
+  "group text"
+}
+.exp {
+  display: grid;
+  grid-template-columns: 13% 70%;
+  grid-template-areas: 
+  "group text"
+  "group text"
+  "group text"
+}
+@media screen and (max-width: 600px)
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.edu {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-template-areas: 
+  "group text"
+  "group text"
+  "group text"
+}
+.ach {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-template-areas: 
+  "group text"
+  "group text"
+  "group text"
+}
+.exp {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-template-areas: 
+  "group text"
+  "group text"
+  "group text"
+}
