@@ -34,7 +34,7 @@ h2{
 }
 h3{
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
 }
 p{
   font-size: 16px;
@@ -51,7 +51,7 @@ a
   color: #1C483E;
 }
 /*desktop style*/
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1200px){
 .wrapper {
   display: grid;
   grid-template-columns: 28% 60%;
@@ -76,30 +76,46 @@ a
   margin-bottom: 50px;}
 }
 
-/*mobile style*/
-@media screen and (max-width: 950px) {
-.wrapper, .lesbos{
-  display: block;
+
+@media screen and (max-width: 900px){
+.wrapper {
+  display: block
 }
-body{
-  margin: 100px;
+.edu, .ach, .exp {
+  grid-column: all;
+  display: block
 }
-.wrapper{
-  margin-top: 20px;
+.group, .text{
+  margin-left: 50px;
+}
+.ach, .exp, .edu{
+  margin-bottom: 50px;}
+}
+/*tablet and laptop*/
+@media screen and (min-width: 900px){ 
+.wrapper {
+  display: grid;
+  grid-template-columns: 35% 60%;
+  grid-template-rows: auto;
+  gap: 10px;
+  margin-left: 5%;
+}
+.edu, .ach, .exp {
+  grid-column: all;
+  display: grid;
+  grid-template-columns: 35% 60%;
+  grid-template-areas: 
+  "group text"
+  "group text"
+  "group text";
+  margin-right: 10%;
 }
 
-.ach, .exp, .edu {
-  display: block;
+.group, .text{
+  margin-left: 50px;
+}
+.ach, .exp, .edu{
+  margin-bottom: 50px;}
 }
 
-.ach, .edu{
-  margin-top: 25px;
-  margin-bottom: 25px;
-
-}
-.
-h1 {
-  text-size-adjust:  none;
-  font-size: 80px;
-}
 }
