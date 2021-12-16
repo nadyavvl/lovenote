@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: white;
+  background-color: transparent;
 }
 
 body {
+  background: transparent;
   font-family: sans-serif;
   font-size: 40px;
   width: 100%;
@@ -23,13 +24,16 @@ body,p,a,ul,li
       padding: 0;
       text-decoration: none;}
 a 
-      {color: #508AA8;
+      {color: #3D9D86;
       margin-left: 0}
 li
       {list-style-type: none;}
 
 
 /*base styles*/
+body {
+  background: radial-gradient(at 0% 30%, aquamarine 10px, floralwhite 40%);
+}
 body
       {overflow-x: hidden;
 overflow-y: auto;
@@ -53,8 +57,10 @@ img {
   font-family: montserrat;
   font-size: 12px;
   font-weight: bold;
+  color: #1C483E;
 }
 h1{
+      color: black;
       font-family: montserrat;
       font-size: 80px;
       line-height: 80px;
@@ -72,20 +78,25 @@ h3{
       font-family: montserrat;
       font-weight:  bold;
       font-size: 16px;
+      color: black;
       }
 h4{
       font-family: montserrat;
       font-weight:bold;
       font-size: 12px;
+      color: #3D9D86
       }
 h5{
       font-family: montserrat;
       font-size: 12px;
+      color: #3D9D86
       }
 
 p{
       font-family: montserrat;
       font-size: 12px;
+      background: none;
+      color: #3D9D86
       }
 .wtf {
       margin-top: 5px;
