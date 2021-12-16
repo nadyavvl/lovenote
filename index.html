@@ -1,59 +1,152 @@
-<!DOCTYPE html>
-<html>
-<head>
-   <title>nadya valeyeva</title>
-   <meta charset="utf-8">
-   <meta content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
-</head>
-</head>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
 
-<body>
-<div class="wrapper">
-   <div class="intro">
-      <h1>Nadya <br>Valeyeva</h1>
-        <h2>hey! i'm a final grade student planning to study human culture and its philosophy.</h2>
-        <h2 class="br"><br>i’m interested in marxist theory, social history of art, history of photography, cultural anthropology and museum studies. <br><br>looking forward to work in museum archives and do research on oddly specific topics.<br> <br>
-        <a href="https://www.instagram.com/nadya.vvl">instagram</a><br><a href="mailto:nadya.valeyeva@gmail.com">nadya.valeyeva@gmail.com</a></h2>
-      <p>see a problem? i'm majoring in humanities not CS lol</p>
-   </div>
-<div class="lesbos">
-   <div class="ach">
-      <div class="group">
-         <h3>achievements:</h3>
-      </div>
-      <div class="text"> 
-         <p class="topic">new digital museum competition</p>
-         <p>with a team of 3 we created a full-on project of a scientific museum with its exhibit policy, inventory plan, architectural design, and, most importantly, strong storyline built around quazireligious origins of maths and physics.</p>
-         <p class="topic">sas summer school competition</p>
-         <p>in SAS Summer School i worked on a critical review of neoliberal definitions of home in conventional psychology and looked for ways to redefine it through existential framework. right now i'm keeping working on this concept.</p>
-      </div> 
-   </div>
-   <div class="exp">
-      <div class="group">
-         <h3>expirience:</h3>         
-      </div>
-      <div class="text">
-         <p class="topic">volunteered for: </p>
-         <p>the gallery of contemporary art of the Republic of Tatarstan <br>the center of contemporary culture SMENA and their book fairs <br>“Lan” e-library <br>HSE Cultural studies department <br>currently volunteering for Manezh in SPB</p>
-      </div>
-   </div>
-   <div class="edu">
-      <div class="group">
-         <h3>education:</h3>
-      </div>
-      <div class="text">
-         <p class="topic">lyceum #83, Kazan</p> 
-         <p>2010-2022 <br> class with in-depth learning of physics</p>
-         <p class="topic">art school #1, Kazan</p>
-         <p>2015-2021<br>gpa 5.0 out of 5</p>
-         <p class="topic">HSE online courses:</p> 
-         <p>history of design (2019)<br>history of contemporary art (2019)<br>art history (2020)<br>philosophy of culture(2021)</p>
-         <p class="topic">promotion of cultural events course<br>by Albina Zakirullina</p>
-      </div>
-   </div>
-</div>
-<div style="background-image: src=me.png;>
-</body>
+body {
+  font-family: sans-serif;
+  font-size: 40px;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 2%;
+  margin-left: 5%;;
+}
+:root{
+ --blue: #508AA8;
+ --dark: #031927}
+
+body,p,a,ul,li
+      {
+      margin-top:0
+      padding: 0;
+      text-decoration: none;}
+a 
+      {color: #508AA8;
+      margin-left: 0}
+li
+      {list-style-type: none;}
+
+
+/*base styles*/
+body
+      {overflow-x: hidden;
+overflow-y: auto;
+background-color: white;
+}
+
+img {
+  height: 120vh;
+  width: auto;
+  margin-top: -40%;
+}
+/*fonts*/
+       @font-face{
+        font-family: 'montserrat'
+        src: url('assets/fonts/montserrat-black.ttf')}
+.intro{
+  width: 100%;
+}
+
+.topic{
+  font-family: montserrat;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1{
+      font-family: montserrat;
+      font-size: 80px;
+      line-height: 80px;
+      margin-top: -10px;
+      margin-bottom: 25px;
+      overflow: visible;
+      font-weight: bold;
+}
+h2{
+      font-family: montserrat;
+      font-weight: bold;
+      font-size: 20px;
+      }
+h3{
+      font-family: montserrat;
+      font-weight:  bold;
+      font-size: 16px;
+      }
+h4{
+      font-family: montserrat;
+      font-weight:bold;
+      font-size: 12px;
+      }
+h5{
+      font-family: montserrat;
+      font-size: 12px;
+      }
+
+p{
+      font-family: montserrat;
+      font-size: 12px;
+      }
+.wtf {
+      margin-top: 5px;
+}
+/*desktop style*/
+@media screen and (min-width: 1000px){
+.wrapper {
+  display: grid;
+  grid-template-columns: 28% 50%;
+  grid-template-rows: auto;
+  gap: 10px;
+  margin-left: ;
+}
+.edu, .ach, .exp {
+  grid-column: all;
+  display: grid;
+  grid-template-columns: 26% 60%;
+  grid-template-areas: 
+  "group text"
+  "group text"
+  "group text"
+}
+
+.group{
+  margin-left: 50px;
+}
+.text{
+  margin-left: 50px;
+  margin-right: 0;
+}
+.ach{
+  margin-bottom: 50px;
+}
+.edu{
+  margin-top: 50px;
+}
+
+}
+
+/*mobile style*/
+@media screen and (max-width: 600px) {
+.wrapper, .lesbos{
+  display: block;
+  width: 90%;
+}
+.wrapper{
+  margin-top: 20px;
+}
+
+.ach, .exp, .edu {
+  display: block;
+}
+
+.ach, .edu{
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+.
+h1 {
+  text-size-adjust:  none;
+  font-size: 80px;
+}
+}
