@@ -11,7 +11,7 @@ body {
   width: 100%;
   min-height: 100vh;
   margin-top: 2%;
-  margin-left: 5%;
+  margin-left: 5%;;
 }
 :root{
  --blue: #508AA8;
@@ -27,6 +27,8 @@ a
       margin-left: 0}
 li
       {list-style-type: none;}
+
+
 /*base styles*/
 body
       {overflow-x: hidden;
@@ -35,23 +37,84 @@ background-color: white;
 }
 
 img {
-  position: relative;
-  width: 30%;
+  height: 120vh;
+  width: auto;
+  margin-top: -40%;
 }
 /*fonts*/
-       @font-face{font-family: 'montserrat'
-       src: url('assets/fonts/montserrat-black.ttf');
-       font-family: 'kanit'
-         src: url('assets/fonts/kanit-blackitalic.ttf')}
+       @font-face{
+        font-family: 'montserrat'
+        src: url('assets/fonts/montserrat-black.ttf')}
 .intro{
   width: 100%;
 }
+
+.topic{
+  font-family: montserrat;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1{
+      font-family: montserrat;
+      font-size: 80px;
+      line-height: 80px;
+      margin-top: -10px;
+      margin-bottom: 25px;
+      overflow: visible;
+      font-weight: bold;
+}
+h2{
+      font-family: montserrat;
+      font-weight: bold;
+      font-size: 20px;
+      }
+h3{
+      font-family: montserrat;
+      font-weight:  bold;
+      font-size: 16px;
+      }
+h4{
+      font-family: montserrat;
+      font-weight:bold;
+      font-size: 12px;
+      }
+h5{
+      font-family: montserrat;
+      font-size: 12px;
+      }
+
+p{
+      font-family: montserrat;
+      font-size: 12px;
+      }
+.wtf {
+      margin-top: 5px;
+}
+/*desktop style*/
+@media screen and (min-width: 1000px){
+.wrapper {
+  display: grid;
+  grid-template-columns: 28% 50%;
+  grid-template-rows: auto;
+  gap: 10px;
+  margin-left: ;
+}
+.edu, .ach, .exp {
+  grid-column: all;
+  display: grid;
+  grid-template-columns: 26% 60%;
+  grid-template-areas: 
+  "group text"
+  "group text"
+  "group text"
+}
+
 .group{
   margin-left: 50px;
 }
 .text{
   margin-left: 50px;
-  margin-right: 35%;
+  margin-right: 0;
 }
 .ach{
   margin-bottom: 50px;
@@ -59,111 +122,31 @@ img {
 .edu{
   margin-top: 50px;
 }
-.topic{
-  font-family: montserrat;
-  font-size: 14px;
-  font-weight: bold;
-}
-h1{
-      color: black;
-      font-family: montserrat;
-      width: 100%;
-      font-size: auto;
-      line-height: 80px;
-      margin-top: -10px;
-      margin-bottom: 25px;
-      overflow: visible;
-      font-weight: black;
-}
-h2{
-      color: black;
-      font-family: montserrat;
-      font-weight: bold;
-      font-size: 23px;
-      }
-h3{
-      color: black;
-      font-family: montserrat;
-      font-weight:  bold;
-      font-size: 20px;
-      }
-h4{    
-      color: #000033;
-      font-family: montserrat;
-      font-weight:bold;
-      font-size: 15px;
-      }
-h5{
-      color: #000033;
-      font-family: montserrat;
-      font-size: 14px;
-      }
 
-p{
-      font-family: montserrat;
-      font-size: 14px;
-      }
+}
 
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 25% 65%;
-  grid-template-rows: auto;
-  gap: 10px;
-  margin-left: ;
+/*mobile style*/
+@media screen and (max-width: 600px) {
+.wrapper, .lesbos{
+  display: block;
+  width: 90%;
 }
-.edu {
-  display: grid;
-  grid-template-columns:5% 70%;
-  grid-template-areas: 
-  "group text"
-  "group text"
-  "group text"
-}
-.ach {
-  display: grid;
-  grid-template-areas: 
-  "group text"
-  "group text"
-  "group text"
-}
-.exp {
-  display: grid;
-  grid-template-columns: 13% 70%;
-  grid-template-areas: 
-  "group text"
-  "group text"
-  "group text"
-}
-@media screen and (max-width: 600px)
 .wrapper{
-  display: grid;
-  grid-template-columns: repeat;
-  gap: 10px;
-  box-sizing: border-box;
+  margin-top: 20px;
 }
 
-.edu {
-  display: grid;
-  grid-template-columns: 20% 70%;
-  grid-template-areas: 
-  "group text"
-  "group text"
-  "group text"
+.ach, .exp, .edu {
+  display: block;
 }
-.ach {
-  display: grid;
-  grid-template-columns: 20% 70%;
-  grid-template-areas: 
-  "group text"
-  "group text"
-  "group text"
+
+.ach, .edu{
+  margin-top: 25px;
+  margin-bottom: 25px;
+
 }
-.exp {
-  display: grid;
-  grid-template-columns: 20% 70%;
-  grid-template-areas: 
-  "group text"
-  "group text"
-  "group text"
+.
+h1 {
+  text-size-adjust:  none;
+  font-size: 80px;
+}
 }
