@@ -51,6 +51,7 @@ a
   color: #1C483E;
 }
 .intro{
+  margin-right:20%}
 /*desktop style*/
 @media screen and (min-width: 1200px){
 .wrapper {
