@@ -6,109 +6,58 @@
 }
 
 body {
-  background: transparent;
-  font-family: sans-serif;
-  font-size: 40px;
+  font-family: montserrat;
+  font-size: 12px;
   width: 100%;
   min-height: 100vh;
-  margin-top: 2%;
-  margin-left: 5%;;
-}
-:root{
- --blue: #508AA8;
- --dark: #031927}
-
-body,p,a,ul,li
-      {
-      margin-top:0
-      padding: 0;
-      text-decoration: none;}
-a 
-      {color: #3D9D86;
-      margin-left: 0}
-li
-      {list-style-type: none;}
-
-
-/*base styles*/
-body {
+  margin-top: 4%;
   background: radial-gradient(at 0% 30%, aquamarine 10px, floralwhite 40%);
-}
-body
-      {overflow-x: hidden;
-overflow-y: auto;
-background-color: white;
-}
-
-img {
-  height: 120vh;
-  width: auto;
-  margin-top: -40%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white;
 }
 /*fonts*/
        @font-face{
         font-family: 'montserrat'
         src: url('assets/fonts/montserrat-black.ttf')}
-.intro{
-  width: 100%;
-}
-
-.topic{
-  font-family: montserrat;
-  font-size: 12px;
-  font-weight: bold;
-  color: #1C483E;
-}
 h1{
-      color: black;
-      font-family: montserrat;
-      font-size: 80px;
-      line-height: 80px;
-      margin-top: -10px;
-      margin-bottom: 25px;
-      overflow: visible;
-      font-weight: bold;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  overflow: visible;
 }
 h2{
-      font-family: montserrat;
-      font-weight: bold;
-      font-size: 20px;
-      }
+  font-weight: bold;
+  font-size: 25px;
+}
 h3{
-      font-family: montserrat;
-      font-weight:  bold;
-      font-size: 16px;
-      color: black;
-      }
-h4{
-      font-family: montserrat;
-      font-weight:bold;
-      font-size: 12px;
-      color: #3D9D86
-      }
-h5{
-      font-family: montserrat;
-      font-size: 12px;
-      color: #3D9D86
-      }
-
+  font-weight: bold;
+  font-size: 16px;
+}
 p{
-      font-family: montserrat;
-      font-size: 12px;
-      background: none;
-      color: #3D9D86
-      }
+  font-size: 16px;
+  color: #3D9D86
+}
+a 
+  {color: #3D9D86;
+  margin-left: 0}
 .wtf {
       margin-top: 5px;
+}
+.topic{
+  font-weight: bold;
+  color: #1C483E;
 }
 /*desktop style*/
 @media screen and (min-width: 1000px){
 .wrapper {
   display: grid;
-  grid-template-columns: 28% 50%;
+  grid-template-columns: 28% 60%;
   grid-template-rows: auto;
   gap: 10px;
-  margin-left: ;
+  margin-left: 5%;
 }
 .edu, .ach, .exp {
   grid-column: all;
@@ -120,27 +69,20 @@ p{
   "group text"
 }
 
-.group{
+.group, .text{
   margin-left: 50px;
 }
-.text{
-  margin-left: 50px;
-  margin-right: 0;
-}
-.ach{
-  margin-bottom: 50px;
-}
-.edu{
-  margin-top: 50px;
-}
-
+.ach, .exp, .edu{
+  margin-bottom: 50px;}
 }
 
 /*mobile style*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
 .wrapper, .lesbos{
   display: block;
-  width: 90%;
+}
+body{
+  margin: 100px;
 }
 .wrapper{
   margin-top: 20px;
