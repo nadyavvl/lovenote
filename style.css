@@ -17,16 +17,22 @@ body {
   background-color: white;
 }
 /*fonts*/
-       @font-face{
-        font-family: 'montserrat'
-        src: url('assets/fonts/montserrat-black.ttf')}
+  @font-face{
+  font-family: 'montserrat'
+  src: url('assets/fonts/montserrat-black.ttf');
+  font-family: 'Montserrat Black', sans-serif;
+  src:url('assets/fonts/montserrat-black.ttf')
+}
+
 h1{
-  font-weight: bold;
+  font-family: montserrat;
+  font-weight: black;
   font-size: 80px;
   line-height: 80px;
   margin-top: -10px;
   margin-bottom: 25px;
   overflow: visible;
+
 }
 h2{
   font-weight: bold;
@@ -50,8 +56,10 @@ a
   font-weight: bold;
   color: #1C483E;
 }
-.intro{
-  margin-right:20%}
+.intro
+{
+  margin-right: 15%;
+}
 /*desktop style*/
 @media screen and (min-width: 1200px){
 .wrapper {
@@ -64,7 +72,7 @@ a
 .edu, .ach, .exp {
   grid-column: all;
   display: grid;
-  grid-template-columns: 26% 60%;
+  grid-template-columns: 28% 60%;
   grid-template-areas: 
   "group text"
   "group text"
@@ -93,6 +101,7 @@ a
 .ach, .exp, .edu{
   margin-bottom: 50px;}
 }
+
 /*tablet and laptop*/
 @media screen and (min-width: 900px){ 
 .wrapper {
@@ -105,12 +114,12 @@ a
 .edu, .ach, .exp {
   grid-column: all;
   display: grid;
-  grid-template-columns: 35% 60%;
+  grid-template-columns: 40% 60%;
   grid-template-areas: 
   "group text"
   "group text"
   "group text";
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 .group, .text{
@@ -119,5 +128,7 @@ a
 .ach, .exp, .edu{
   margin-bottom: 50px;}
 }
+
+a{font-size: 60%;}
 
 }
