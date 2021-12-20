@@ -48,7 +48,8 @@ p{
 }
 a 
   {color: #3D9D86;
-  margin-left: 0}
+  margin-left: 0;
+  cursor: pointer}
 .wtf {
       margin-top: 5px;
 }
