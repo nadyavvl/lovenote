@@ -19,11 +19,12 @@ body {
   font-family: 'montserrat'
   src: url('assets/fonts/montserrat-black.ttf');
   font-family: 'Montserrat Black', sans-serif;
-  src:url('assets/fonts/montserrat-black.ttf')
+  src:url('assets/fonts/montserrat-black.ttf');
+  font-family: 'Syncopate', sans-serif;
 }
 /*text styles*/
 h1{
-  font-family: montserrat;
+  font-family: Syncopate;
   font-weight: black;
   font-size: 70px;
   line-height: 70px;
