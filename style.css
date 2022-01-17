@@ -10,7 +10,7 @@ body {
   width: 100%;
   min-height: 100vh;
   margin: 4%;
-  background: radial-gradient(at 0% 30%, aquamarine 10px, floralwhite 40%);
+  background: radial-gradient(at 0% 30%, aquamarine 10px, white 40%);
   overflow-x: hidden;
   background-color: white;
 }
