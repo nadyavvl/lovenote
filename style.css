@@ -5,58 +5,37 @@
   background-color: transparent;
 }
 body {
-  font-family: montserrat;
+  font-family: DM Sans;
   font-size: 12px;
   width: 100%;
   min-height: 100vh;
-  margin: 4%;
-  background: radial-gradient(at 0% 30%, aquamarine 10px, white 40%);
-  overflow-x: hidden;
-  background-color: white;
-}
-/*fonts*/
-  @font-face{
-  font-family: 'montserrat'
-  src: url('assets/fonts/montserrat-black.ttf');
-  font-family: 'Montserrat Black', sans-serif;
-  src:url('assets/fonts/montserrat-black.ttf');
-  font-family: 'Syncopate', sans-serif;
+  margin: 2%;
+  margin-top: 1.5%;
+  background: url(i.png) no-repeat;
+  background-size: 100%; 
 }
 /*text styles*/
 h1{
-  font-family: 'montserrat';
+  font-family: BioRhyme;
   font-weight: black;
-  font-size: 70px;
-  line-height: 70px;
-  margin-top: -10px;
+  font-size: 64px;
   margin-bottom: 25px;
-  overflow: visible;
+  margin-left: 1%;
 }
 h2{
-  font-weight: bold;
-  font-size: 25px;
+  font-size: 24px;
+  font-weight: 400;
 }
-h3{
-  font-weight: bold;
-  font-size: 17px;
-}
-p{
-  font-size: 16px;
-  color: #3D9D86;
-  margin: 0;
-  padding: 0;
+ul{
+  font-size: 24px;
+  margin-left: 7%;
 }
 a 
-  {color: #3D9D86;
+  {color: #FF0000;
   margin-left: 0}
-.wtf {
-      margin-top: 5px;
+.red{
+  color: #ff0000;
 }
-.topic{
-  font-weight: bold;
-  color: #1C483E;
-}
-
 
 /*mobile*/
 @media screen  and (min-width: 200px){
@@ -64,85 +43,53 @@ body {
   display: block;
     width: 75%;
 }
-.ach, .exp, .edu{
-  margin-bottom: 20px;
-}
 h1{
   font-size: 60px;
 }
+h2{
+  font-size: 18px;
+}
 h3{
-  font-size: 25px;
+  font-size: 18px;
 }
-p,a{font-size: 20px;}
-.ach{
-  margin-top: 40px;
-}
-.group{
-  margin-bottom: 10px
-}
+p,a{font-size: 18px;}
+
 }
 /*tablet*/
 @media screen and (min-width: 450px){
 .wrapper {
   display: grid;
-  grid-template-columns: 45% 55%;
-  grid-template-rows: auto;
-  gap: 15%;;
+  grid-template-columns: 45%;
 }
-.edu, .ach, .exp {
-  grid-column: all;
-  display: block;
-  margin-bottom: 50px;
-  }
-.ach, .exp, .edu{
-  margin-bottom: 50px;}
-
 h1{
-  font-size: 60px;
+  font-size: 50px;
   line-height: 60px;
 }
 h2,{
-  font-size: 25px;
+  font-size: 18px;
 }
 h3{
-  font-size: 20px;
+  font-size: 18px;
 }
-p, a, .wtf{
-  font-size: 15px;}
+p, a {
+  font-size: 18px;}
 }
 /*desktop*/
 @media screen and (min-width: 1000px){
 .wrapper {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: auto;
-  gap: 100px;
   margin-left: 1%;
 }
-.edu, .ach, .exp {
-  grid-column: all;
-  display: grid;
-  grid-template-columns: 35% 80%;
-  grid-column-gap:;
-  grid-template-areas: 
-  "group text"
-  "group text"
-  "group text"
-}
-.ach, .exp, .edu{
-  margin-bottom: 50px;}
-
 h1{
   font-size: 70px;
   line-height: 70px;
 }
 h2,a{
-  font-size: 25px;
+  font-size: 24px;
 }
 h3{
-  font-size: 20px;
+  font-size: 24px;
 }
 p{
-  font-size: 15px;
+  font-size: 24px;
 }
 }
