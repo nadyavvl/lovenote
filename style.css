@@ -1,4 +1,4 @@
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -73,13 +73,14 @@ a
     width: 90%;
   }
   h1{
-    font-size: 72px;
+    font-size: 100px;
+    line-height: 100px;
     width: 100%;
     margin-left: 6%;
     margin-top: 4%;
   }
   h2, ul, li{
-    font-size: 24px;
+    font-size: 36px;
   }
   .wrapper{
     display: inline-block;
@@ -112,8 +113,8 @@ a
   .wrapper{
     width: 90%;
     display: grid;
-  grid-template-columns: 45%;
-  margin-left: 2.5%;
+    grid-template-columns: 45%;
+    margin-left: 2.5%;
   }
   .intro{
     width: 45%;
@@ -124,22 +125,26 @@ a
 }
 @media screen and (min-width: 1000px){
   body{
-  background: url(assets/i.png) no-repeat;
-  background-size: 100%;
-  overflow-x: hidden;
-  min-height: 100%;
+    background: url(assets/i.png) no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+    min-height: 100%;
   }
   h1{
     font-size: 64px;
+    line-height: 70px;
     width: 100%;
     margin-left: 2.5%;
     margin-top: 0;
   }
+  h2, ul, li{
+    font-size: 24px;
+  }
   .wrapper{
-  width: 75%;
-  display: grid;
-  grid-template-columns: 45%;
-  margin-left: 2.5%;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 45%;
+    margin-left: 2.5%;
   }
   .intro{
  width: 100%;
