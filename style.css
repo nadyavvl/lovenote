@@ -4,92 +4,149 @@
   box-sizing: border-box;
   background-color: transparent;
 }
+html{
+  height: 100%
+}
 body {
   font-family: DM Sans;
   font-size: 12px;
   width: 100%;
   min-height: 100vh;
-  margin: 2%;
+  margin: 0;
   margin-top: 1.5%;
-  background: url(i.png) no-repeat;
-  background-size: 100%; 
+  background: url(assets/i.png) no-repeat;
+  background-size: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
 }
+footer {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  margin: 2em 0;
+  height: 70px;
+  margin-top: 70px;
+  background-color: #999;
+}
+p{
+  padding-left: 10%;
+  color: white;
+  font-size: 0.7em;
+  line-height: 70px;
+  text-transform: capitalize;
+  letter-spacing: 1px;}
+}
+
 /*text styles*/
+h1, h2, ul, a {
+  margin-left: 5%;
+}
 h1{
   font-family: BioRhyme;
   font-weight: black;
   font-size: 64px;
+  line-height: 70px;
   margin-bottom: 25px;
-  margin-left: 1%;
+  margin-left: 2.5%;
 }
-h2{
+h2,li,ul{
   font-size: 24px;
   font-weight: 400;
 }
 ul{
-  font-size: 24px;
   margin-left: 7%;
 }
-a 
+a
   {color: #FF0000;
   margin-left: 0}
 .red{
   color: #ff0000;
 }
-
-/*mobile*/
-@media screen  and (min-width: 200px){
-body {
-  display: block;
-    width: 75%;
+.wrapper{
+  width: 75%;
+  display: grid;
+  margin-left: 2.5%;
 }
-h1{
-  font-size: 60px;
+/*mobile version*/
+@media screen and (min-width: 200px){
+  body{
+    background: white;
+    width: 90%;
+  }
+  h1{
+    font-size: 72px;
+    width: 100%;
+    margin-left: 6%;
+    margin-top: 4%;
+  }
+  h2, ul, li{
+    font-size: 24px;
+  }
+  .wrapper{
+    display: inline-block;
+    width: 98%;
+    margin: 6%;
+    margin-top: 0;
+  }
+  .me{
+    display: inline-block;
+    width: 100%;
+  }
 }
-h2{
-  font-size: 18px;
+/*tablet version*/
+@media screen and (min-width: 600px){
+  body {
+  font-family: DM Sans;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  margin-top: 1.5%;
+  background: url(assets/i.png) no-repeat;
+  background-size: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
+  display: grid;
+  }
+  h1{
+    width: 35%;
+  }
+  .wrapper{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 45%;
+    margin-left: 2.5%;
+  }
+  .intro{
+    width: 45%;
+  }
+  .me{
+    display: none;
+  }
 }
-h3{
-  font-size: 18px;
-}
-p,a{font-size: 18px;}
-
-}
-/*tablet*/
-@media screen and (min-width: 450px){
-.wrapper {
+/*desktop version*/
+@media screen and (min-width: 1000px){
+  body{
+  background: url(assets/i.png) no-repeat;
+  background-size: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
+  }
+  h1{
+    font-size: 64px;
+    width: 100%;
+    margin-left: 2.5%;
+    margin-top: 0;
+  }
+  .wrapper{
+  width: 75%;
   display: grid;
   grid-template-columns: 45%;
-}
-h1{
-  font-size: 50px;
-  line-height: 60px;
-}
-h2,{
-  font-size: 18px;
-}
-h3{
-  font-size: 18px;
-}
-p, a {
-  font-size: 18px;}
-}
-/*desktop*/
-@media screen and (min-width: 1000px){
-.wrapper {
-  margin-left: 1%;
-}
-h1{
-  font-size: 70px;
-  line-height: 70px;
-}
-h2,a{
-  font-size: 24px;
-}
-h3{
-  font-size: 24px;
-}
-p{
-  font-size: 24px;
-}
+  margin-left: 2.5%;
+  }
+  .intro{
+ width: 100%;
+  }
+  .me{
+    display: none;
+  }
 }
